@@ -9,13 +9,30 @@
 /* Begin PBXBuildFile section */
 		67DE11121820429500A882B4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67DE11111820429500A882B4 /* main.cpp */; };
 		67DE11141820429500A882B4 /* ActionGame.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 67DE11131820429500A882B4 /* ActionGame.1 */; };
+		67DE111B182042F500A882B4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67DE111A182042F500A882B4 /* Cocoa.framework */; };
+		67DE111E1820431B00A882B4 /* SDL_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67DE111C1820431B00A882B4 /* SDL_image.framework */; };
+		67DE111F1820431B00A882B4 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67DE111D1820431B00A882B4 /* SDL.framework */; };
+		67DE112F1820443700A882B4 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67DE11251820443700A882B4 /* GameObject.cpp */; };
+		67DE11301820443700A882B4 /* Grant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67DE11271820443700A882B4 /* Grant.cpp */; };
+		67DE11321820443700A882B4 /* TileMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67DE112B1820443700A882B4 /* TileMap.cpp */; };
+		67DE11331820443700A882B4 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67DE112D1820443700A882B4 /* Timer.cpp */; };
+		67DE11351820454100A882B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67DE11341820454100A882B4 /* Foundation.framework */; };
+		67DE11361820455000A882B4 /* SDLMain.h in Sources */ = {isa = PBXBuildFile; fileRef = 67DE11231820438A00A882B4 /* SDLMain.h */; };
+		67DE11371820455000A882B4 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 67DE11241820438A00A882B4 /* SDLMain.m */; };
+		67DE11381820455000A882B4 /* GameObject.h in Sources */ = {isa = PBXBuildFile; fileRef = 67DE11261820443700A882B4 /* GameObject.h */; };
+		67DE11391820455000A882B4 /* Grant.h in Sources */ = {isa = PBXBuildFile; fileRef = 67DE11281820443700A882B4 /* Grant.h */; };
+		67DE113B1820455000A882B4 /* TileMap.h in Sources */ = {isa = PBXBuildFile; fileRef = 67DE112C1820443700A882B4 /* TileMap.h */; };
+		67DE113C1820455000A882B4 /* Timer.h in Sources */ = {isa = PBXBuildFile; fileRef = 67DE112E1820443700A882B4 /* Timer.h */; };
+		67DE113D1820455000A882B4 /* RenderingUtils.h in Sources */ = {isa = PBXBuildFile; fileRef = 67DE11201820438A00A882B4 /* RenderingUtils.h */; };
+		67DE113E1820455000A882B4 /* SDL_collide.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67DE11211820438A00A882B4 /* SDL_collide.cpp */; };
+		67DE113F1820455000A882B4 /* SDL_collide.h in Sources */ = {isa = PBXBuildFile; fileRef = 67DE11221820438A00A882B4 /* SDL_collide.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		67DE110C1820429500A882B4 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			buildActionMask = 8;
+			dstPath = usr/share/man/man1;
 			dstSubfolderSpec = 0;
 			files = (
 				67DE11141820429500A882B4 /* ActionGame.1 in CopyFiles */,
@@ -26,8 +43,25 @@
 
 /* Begin PBXFileReference section */
 		67DE110E1820429500A882B4 /* ActionGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ActionGame; sourceTree = BUILT_PRODUCTS_DIR; };
-		67DE11111820429500A882B4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		67DE11111820429500A882B4 /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = main.cpp; sourceTree = "<group>"; };
 		67DE11131820429500A882B4 /* ActionGame.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ActionGame.1; sourceTree = "<group>"; };
+		67DE111A182042F500A882B4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		67DE111C1820431B00A882B4 /* SDL_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_image.framework; path = ../../../workspace_c/MyGame/SDL_image.framework; sourceTree = "<group>"; };
+		67DE111D1820431B00A882B4 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = ../../../workspace_c/MyGame/SDL.framework; sourceTree = "<group>"; };
+		67DE11201820438A00A882B4 /* RenderingUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = RenderingUtils.h; sourceTree = "<group>"; };
+		67DE11211820438A00A882B4 /* SDL_collide.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = SDL_collide.cpp; sourceTree = "<group>"; };
+		67DE11221820438A00A882B4 /* SDL_collide.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = SDL_collide.h; sourceTree = "<group>"; };
+		67DE11231820438A00A882B4 /* SDLMain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDLMain.h; sourceTree = "<group>"; };
+		67DE11241820438A00A882B4 /* SDLMain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDLMain.m; sourceTree = "<group>"; };
+		67DE11251820443700A882B4 /* GameObject.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = GameObject.cpp; sourceTree = "<group>"; };
+		67DE11261820443700A882B4 /* GameObject.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = GameObject.h; sourceTree = "<group>"; };
+		67DE11271820443700A882B4 /* Grant.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = Grant.cpp; sourceTree = "<group>"; };
+		67DE11281820443700A882B4 /* Grant.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = Grant.h; sourceTree = "<group>"; };
+		67DE112B1820443700A882B4 /* TileMap.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = TileMap.cpp; sourceTree = "<group>"; };
+		67DE112C1820443700A882B4 /* TileMap.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = TileMap.h; sourceTree = "<group>"; };
+		67DE112D1820443700A882B4 /* Timer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = Timer.cpp; sourceTree = "<group>"; };
+		67DE112E1820443700A882B4 /* Timer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = Timer.h; sourceTree = "<group>"; };
+		67DE11341820454100A882B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +69,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67DE111B182042F500A882B4 /* Cocoa.framework in Frameworks */,
+				67DE11351820454100A882B4 /* Foundation.framework in Frameworks */,
+				67DE111E1820431B00A882B4 /* SDL_image.framework in Frameworks */,
+				67DE111F1820431B00A882B4 /* SDL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +82,10 @@
 		67DE11051820429500A882B4 = {
 			isa = PBXGroup;
 			children = (
+				67DE11341820454100A882B4 /* Foundation.framework */,
+				67DE111C1820431B00A882B4 /* SDL_image.framework */,
+				67DE111D1820431B00A882B4 /* SDL.framework */,
+				67DE111A182042F500A882B4 /* Cocoa.framework */,
 				67DE11101820429500A882B4 /* ActionGame */,
 				67DE110F1820429500A882B4 /* Products */,
 			);
@@ -60,6 +102,19 @@
 		67DE11101820429500A882B4 /* ActionGame */ = {
 			isa = PBXGroup;
 			children = (
+				67DE11231820438A00A882B4 /* SDLMain.h */,
+				67DE11241820438A00A882B4 /* SDLMain.m */,
+				67DE11251820443700A882B4 /* GameObject.cpp */,
+				67DE11261820443700A882B4 /* GameObject.h */,
+				67DE11271820443700A882B4 /* Grant.cpp */,
+				67DE11281820443700A882B4 /* Grant.h */,
+				67DE112B1820443700A882B4 /* TileMap.cpp */,
+				67DE112C1820443700A882B4 /* TileMap.h */,
+				67DE112D1820443700A882B4 /* Timer.cpp */,
+				67DE112E1820443700A882B4 /* Timer.h */,
+				67DE11201820438A00A882B4 /* RenderingUtils.h */,
+				67DE11211820438A00A882B4 /* SDL_collide.cpp */,
+				67DE11221820438A00A882B4 /* SDL_collide.h */,
 				67DE11111820429500A882B4 /* main.cpp */,
 				67DE11131820429500A882B4 /* ActionGame.1 */,
 			);
@@ -117,7 +172,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67DE11361820455000A882B4 /* SDLMain.h in Sources */,
+				67DE11371820455000A882B4 /* SDLMain.m in Sources */,
+				67DE11381820455000A882B4 /* GameObject.h in Sources */,
+				67DE11391820455000A882B4 /* Grant.h in Sources */,
+				67DE113B1820455000A882B4 /* TileMap.h in Sources */,
+				67DE113C1820455000A882B4 /* Timer.h in Sources */,
+				67DE113D1820455000A882B4 /* RenderingUtils.h in Sources */,
+				67DE113E1820455000A882B4 /* SDL_collide.cpp in Sources */,
+				67DE113F1820455000A882B4 /* SDL_collide.h in Sources */,
 				67DE11121820429500A882B4 /* main.cpp in Sources */,
+				67DE112F1820443700A882B4 /* GameObject.cpp in Sources */,
+				67DE11301820443700A882B4 /* Grant.cpp in Sources */,
+				67DE11321820443700A882B4 /* TileMap.cpp in Sources */,
+				67DE11331820443700A882B4 /* Timer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,14 +252,29 @@
 		67DE11181820429500A882B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLY_RULES_IN_COPY_FILES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"\"$(SRCROOT)/../../../workspace_c/MyGame\"",
+				);
+				GENERATE_PKGINFO_FILE = YES;
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.jpg";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		67DE11191820429500A882B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLY_RULES_IN_COPY_FILES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"\"$(SRCROOT)/../../../workspace_c/MyGame\"",
+				);
+				GENERATE_PKGINFO_FILE = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
